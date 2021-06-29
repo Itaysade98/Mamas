@@ -8,7 +8,6 @@ namespace Mamas
 {
     public static class Menu
     {
-        private static string optionSelection;
 
         /// <summary>
         /// Writes and manages the applications main menu.
@@ -16,6 +15,7 @@ namespace Mamas
         /// </summary>
         public static void MainMenu()
         {
+            string optionSelection;
             do
                 {
                 Console.WriteLine("Welcome to Ichilov Hospital!");

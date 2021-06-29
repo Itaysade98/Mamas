@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simp7875c9e3614643ec8487d0b0c5ea96e1">
+  <meta>
+    <name>Mamas</name>
+    <authors>Itay Sade</authors>
+    <description />
+  </meta>
+  <counters models="2">
+    <entity-names>
+      <counter>
+        <item-type stereotype="table" type-id="class" type="Class" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>32</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>99</value>
+      </counter>
+      <counter>
+        <item-type type-id="usage" type="Usage" />
+        <value>10</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>10</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-58ddc5eb6f1149e590eb65e5432b2ea7" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Itay</first-name>
+        <last-name>Sade</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-fc32abac4288406bbaf8877a2dcc1d3c" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="string" tid="" name="string" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="int (unique key)" tid="" name="int (unique key)" description="" />
+      <type id="List&lt;Employee&gt;" tid="" name="List&lt;Employee&gt;" description="" />
+      <type id="Dictionary&lt;string, Dictionary&lt;string, int&gt;&gt;" tid="" name="Dictionary&lt;string, Dictionary&lt;string, int&gt;&gt;" description="" />
+      <type id="Dictionary&lt;string, List&lt;dynamic&gt;&gt;" tid="" name="Dictionary&lt;string, List&lt;dynamic&gt;&gt;" description="" />
+      <type id="float" tid="" name="float" description="" />
+      <type id="string[]" tid="" name="string[]" description="" />
+      <type id="varchar50" tid="" name="varchar50" description="" />
+      <type id="bit" tid="" name="bit" description="" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pdb56373af7704c66bf3772a82b4a66ca_150963578" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Itay Sade</author>
+        </authors>
+        <description />
+        <creation-date>06/29/2021 20:32:52</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="41167067385343fa8a54d0f9e660b055" cid="PKG001" type="package" name="Mamas" style-class="" creator="" creation-date="06/29/2021 20:33:02" />
+      </abstract-items>
+      <sub-models>
+        <model id="pda30760507c84bd68f3b2a0c2d70422a_130088116" name="Mamas" namespace="Mamas" order-index="2">
+          <meta>
+            <authors>
+              <author>Itay Sade</author>
+            </authors>
+            <description />
+            <creation-date>06/29/2021 20:33:02</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <abstract-items>
+            <item id="48dea7ea55da4b958a03775130bc646d" cid="C001" type="class" name="Menu" style-class="" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="static" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv39022b1d5793455d9469cb1ef3f953b0" name="namespace" type="text" multiple="false" value="Mamas" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="48dea7ea55da4b958a03775130bc646d_static_c" type="static" ref="" />
+              </stereotype-instances>
+              <owned-items>
+                <owned-item ref="d5f68c42a3594e949869fbbeff367547" />
+              </owned-items>
+              <attributes>
+                <attribute id="acfd572adaab7410e9bdaa7a44100a045471" cid="PROP001" name="optionSelection" creation-date="06/29/2021 20:33:02" property-ref="d5f68c42a3594e949869fbbeff367547" />
+              </attributes>
+              <operations>
+                <operation id="o190e2d07fa834794b4e79353464d4737471" cid="OP001" name="MainMenu" creation-date="06/29/2021 20:33:02" type="" type-id="" visibility="public" static="true">
+                  <documentation>
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles />
+                      <content>
+                        <paragraph>
+                          <style />
+                          <p>
+                            <t> &lt;summary&gt;
+ Writes and manages the applications main menu.
+ reads user input and calls function accordingly.
+ &lt;/summary&gt;
+ &lt;summary&gt;
+ asks user for employee ID and validates the input.
+ if the input is not a valid ID it will call itself recursively
+ until a valid id is given.
+ &lt;/summary&gt;
+ &lt;returns&gt;valid employee ID entered by user&lt;/returns&gt;
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </documentation>
+                  <source-codes>
+                    <source-code language="CSharp">
+            do
+                {
+                Console.WriteLine("Welcome to Ichilov Hospital!");
+                Console.WriteLine("1. Clock in/out by ID number");
+                Console.WriteLine("2. Get employee current monthly salary by ID number");
+                Console.WriteLine("3. Exit");
+                Console.WriteLine("Please choose an action: ");
+                optionSelection = Console.ReadLine();
+                switch (optionSelection)
+                {
+                    case "1":
+                        {
+                            ClockEmployee();
+                            Console.WriteLine("Press any key to return to menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            break;
+                        }
+
+                    case "2":
+                        {
+                            GetEmployeePaycheck();
+                            Console.WriteLine("Press any key to return to menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            break;
+                        }
+
+                    default:
+                        Console.Clear();
+                        break;
+                }
+
+            } while (optionSelection != "3");
+         </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o6ff7c77887b74424b81668c230985e0b471" cid="OP002" name="GetEmployeeID" creation-date="06/29/2021 20:33:02" type="int" type-id="int" visibility="private" static="true">
+                  <documentation>
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles />
+                      <content>
+                        <paragraph>
+                          <style />
+                          <p>
+                            <t> &lt;summary&gt;
+ handles option 1 of main menu.
+ gets employee by id entered by the user,
+ and calls its Clock() function.
+ prints current employee clock status.
+ &lt;/summary&gt;
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </documentation>
+                  <source-codes>
+                    <source-code language="CSharp">
+            Console.WriteLine("Please enter employee ID:");
+            string inputid = Console.ReadLine();
+            int id;
+            bool isnum = int.TryParse(inputid, out id);
+            if (!isnum)
+            {
+                Console.Clear();
+                Console.WriteLine("you did not input a valid id number, please try again.");
+                return GetEmployeeID();
+            }
+            else
+            {
+                return id;
+            }
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o774b5c7105dc4727a70ed2d315724433471" cid="OP003" name="ClockEmployee" creation-date="06/29/2021 20:33:02" type="" type-id="" visibility="private" static="true">
+                  <documentation>
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles />
+                      <content>
+                        <paragraph>
+                          <style />
+                          <p>
+                            <t> &lt;summary&gt;
+ handles option 2 of main menu.
+ gets employee by id entered by the user,
+ and calls its CalculatePaycheck() function.
+ prints current employees paycheck.
+ &lt;/summary&gt;
+ &lt;summary&gt;
+ calls GetEmployeeID() to get valid ID
+ from user and checks if an employee with that id exists.
+ if so, it returns the employee.
+ if not, it calls itself again recursively until a valid employee ID is given.
+ &lt;/summary&gt;
+ &lt;returns&gt;Employee with ID number entered by user&lt;/returns&gt;
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </documentation>
+                  <source-codes>
+                    <source-code language="CSharp">
+            Employee employee = GetEmployee();
+            employee.Clock();
+            string status = "out";
+            if (employee.clockedin == 1)
+            {
+                status = "in";
+            }
+            Console.WriteLine($"{employee.name} is clocked {status}");
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob0fc357bbdc04bd686ec3082fed07090471" cid="OP004" name="GetEmployeePaycheck" creation-date="06/29/2021 20:33:02" type="" type-id="" visibility="private" static="true">
+                  <source-codes>
+                    <source-code language="CSharp">
+            Employee employee = GetEmployee();
+            float currentpay = employee.CalculatePaycheck();
+            Console.WriteLine($"{employee.name}s' paycheck for month-{employee.lasttimestamp.Month}/{employee.lasttimestamp.Year} is: {currentpay}");
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obfa2bd878b80486eb95df08db8cacb6c471" cid="OP005" name="GetEmployee" creation-date="06/29/2021 20:33:02" type="Employee" type-id="Class:5e40b968883f4292bc50788a93c51417" visibility="private" static="true">
+                  <source-codes>
+                    <source-code language="CSharp">
+            int id = GetEmployeeID();
+            List&lt;Employee&gt; filteredEmployees = Utils.Employees.Where(a =&gt; a.id == id).ToList();
+            if (filteredEmployees.Count &gt; 0)
+            {
+                return filteredEmployees[0];
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("The Employee ID entered does not exist. please try again.");
+                return GetEmployee();
+            }
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="d5f68c42a3594e949869fbbeff367547" cid="PROP001" type="property" name="optionSelection" style-class="" owner="48dea7ea55da4b958a03775130bc646d" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature static="true" />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="e948907baad54d2ba26a49274368186a" cid="C002" type="class" name="Utils" style-class="" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="static" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv68918121552d4c8bbfd82ee9c93e3de2" name="namespace" type="text" multiple="false" value="Mamas" />
+              </tagged-values>
+              <documentation>
+                <text>
+                  <default>
+                    <style font-name="Verdana" font-size="12">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </default>
+                  <styles />
+                  <content>
+                    <paragraph>
+                      <style />
+                      <p>
+                        <t> &lt;summary&gt;
+ class for static variables and functions used through-out the project.
+ &lt;/summary&gt;
+</t>
+                      </p>
+                    </paragraph>
+                  </content>
+                </text>
+              </documentation>
+              <stereotype-instances>
+                <stereotype id="e948907baad54d2ba26a49274368186a_static_c" type="static" ref="" />
+              </stereotype-instances>
+              <owned-items>
+                <owned-item ref="220e0539d8344b7b939f1119941b67cf" />
+                <owned-item ref="df770610ad944b1ca27c237ed7ed7e9b" />
+                <owned-item ref="80de6041cf6f42b2be01d3170560d7e9" />
+                <owned-item ref="88ef31471621482a8de09ab2ec6de9d3" />
+                <owned-item ref="de2bfa56cc6046c48e897844012d638f" />
+                <owned-item ref="b7fb0d4a32bf42e485fe1c8eafb97285" />
+              </owned-items>
+              <attributes>
+                <attribute id="afdf5e2fb19864851b4753c0cde36a200472" cid="PROP002" name="Employees" creation-date="06/29/2021 20:33:02" property-ref="220e0539d8344b7b939f1119941b67cf" />
+                <attribute id="a179f256013344f8c8a1ed58170e6d8b7472" cid="PROP003" name="Ranks" creation-date="06/29/2021 20:33:02" property-ref="df770610ad944b1ca27c237ed7ed7e9b" />
+                <attribute id="ad6695cea508d4ae6b5f658a31fc73b86472" cid="PROP004" name="Jobs" creation-date="06/29/2021 20:33:02" property-ref="80de6041cf6f42b2be01d3170560d7e9" />
+                <attribute id="a51ab33682a1d42dda778371aad6bc683472" cid="PROP005" name="Salary" creation-date="06/29/2021 20:33:02" property-ref="88ef31471621482a8de09ab2ec6de9d3" />
+                <attribute id="a9caa9adaf82a4d5cb20026811ab478a4472" cid="PROP006" name="ProjectDir" creation-date="06/29/2021 20:33:02" property-ref="de2bfa56cc6046c48e897844012d638f" />
+                <attribute id="a0c2ebf65be684628abedb3bd133db80c473" cid="PROP007" name="cs" creation-date="06/29/2021 20:33:02" property-ref="b7fb0d4a32bf42e485fe1c8eafb97285" />
+              </attributes>
+            </item>
+            <item id="220e0539d8344b7b939f1119941b67cf" cid="PROP002" type="property" name="Employees" style-class="" owner="e948907baad54d2ba26a49274368186a" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <feature static="true" />
+              <structural-feature type="List&lt;Employee&gt;" type-id="List&lt;Employee&gt;" />
+              <property default-value="new List&lt;Employee&gt;()" />
+            </item>
+            <item id="df770610ad944b1ca27c237ed7ed7e9b" cid="PROP003" type="property" name="Ranks" style-class="" owner="e948907baad54d2ba26a49274368186a" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <feature static="true" />
+              <structural-feature type="Dictionary&lt;string, Dictionary&lt;string, int&gt;&gt;" type-id="Dictionary&lt;string, Dictionary&lt;string, int&gt;&gt;" />
+              <property />
+            </item>
+            <item id="80de6041cf6f42b2be01d3170560d7e9" cid="PROP004" type="property" name="Jobs" style-class="" owner="e948907baad54d2ba26a49274368186a" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <feature static="true" />
+              <structural-feature type="Dictionary&lt;string, List&lt;dynamic&gt;&gt;" type-id="Dictionary&lt;string, List&lt;dynamic&gt;&gt;" />
+              <property />
+            </item>
+            <item id="88ef31471621482a8de09ab2ec6de9d3" cid="PROP005" type="property" name="Salary" style-class="" owner="e948907baad54d2ba26a49274368186a" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <feature static="true" />
+              <structural-feature type="float" type-id="float" />
+              <property default-value="30" />
+            </item>
+            <item id="de2bfa56cc6046c48e897844012d638f" cid="PROP006" type="property" name="ProjectDir" style-class="" owner="e948907baad54d2ba26a49274368186a" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature static="true" />
+              <structural-feature type="string" type-id="string" />
+              <property default-value="Directory.GetParent(Environment.CurrentDirectory).Parent.FullName" />
+            </item>
+            <item id="b7fb0d4a32bf42e485fe1c8eafb97285" cid="PROP007" type="property" name="cs" style-class="" owner="e948907baad54d2ba26a49274368186a" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature static="true" />
+              <structural-feature type="string" type-id="string" />
+              <property default-value="$@&quot;Data Source = (LocalDB)\MSSQLLocalDB" />
+            </item>
+            <item id="5e40b968883f4292bc50788a93c51417" cid="C003" type="class" name="Employee" style-class="" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv7c11b803d5c74f08ac88e32db70cb4f5" name="namespace" type="text" multiple="false" value="Mamas" />
+              </tagged-values>
+              <documentation>
+                <text>
+                  <default>
+                    <style font-name="Verdana" font-size="12">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </default>
+                  <styles />
+                  <content>
+                    <paragraph>
+                      <style />
+                      <p>
+                        <t> &lt;summary&gt;
+ Employee class, holds all relevant information need about an employee at Ichilov
+ &lt;/summary&gt;
+</t>
+                      </p>
+                    </paragraph>
+                  </content>
+                </text>
+              </documentation>
+              <owned-items>
+                <owned-item ref="3dd3673a9a1f4980a3717312b3064551" />
+                <owned-item ref="f42d307e17864ac99923b87eeb5fa5ef" />
+                <owned-item ref="50115060f4414d7a97f0302a56cacade" />
+                <owned-item ref="e109cbf10e1245ec8e177bc6802bd66c" />
+                <owned-item ref="eb111447e7844db491fd0a3fcf96e6ae" />
+                <owned-item ref="924365a2945341eda1c9d067a45d0676" />
+                <owned-item ref="8fd616dc35fb47f1bef3c00af4d76a16" />
+                <owned-item ref="19475393470f4c638e7da58630884e9c" />
+                <owned-item ref="fa465e7d4c6d495ca5d8b8c993e55259" />
+                <owned-item ref="1bdeaaec27b0486c852ebbf21a698e96" />
+                <owned-item ref="2e10164dbdbf43509f2bbaeda7e55751" />
+                <owned-item ref="6bc725b28b174081b4ad29fa952b0f1d" />
+                <owned-item ref="9a7698f1bb6b48bb9527c3e69948c9fb" />
+                <owned-item ref="a7365ac3f144420ba71940eb61cd3537" />
+                <owned-item ref="691b8c8d43b04e7aa61dc20bc50dcc8b" />
+                <owned-item ref="83aeb966d9ce4ca09dbf28810fbd4bd5" />
+                <owned-item ref="8f8da0e270d94065ad2121905fcca0b4" />
+                <owned-item ref="e30e1dc3cdf142d1abebe7ccc1808f04" />
+              </owned-items>
+              <attributes>
+                <attribute id="afa3eba1630524170b16f0f63849d75c6473" cid="PROP008" name="Id" creation-date="06/29/2021 20:33:02" property-ref="3dd3673a9a1f4980a3717312b3064551" />
+                <attribute id="a2e4b8b65d8524d23850f0d7050ad1233473" cid="PROP009" name="Name" creation-date="06/29/2021 20:33:02" property-ref="f42d307e17864ac99923b87eeb5fa5ef" />
+                <attribute id="a8668aea42b944246b2ac60e38a54fa72473" cid="PROP010" name="JobTitle" creation-date="06/29/2021 20:33:02" property-ref="50115060f4414d7a97f0302a56cacade" />
+                <attribute id="ade9a1e6f240b4e77893a0572f89748cf473" cid="PROP011" name="HoursWorked" creation-date="06/29/2021 20:33:02" property-ref="e109cbf10e1245ec8e177bc6802bd66c" />
+                <attribute id="afd70f0b64b5b4f9c92a6323dd98a5aeb473" cid="PROP012" name="ClockedIn" creation-date="06/29/2021 20:33:02" property-ref="eb111447e7844db491fd0a3fcf96e6ae" />
+                <attribute id="ae2a890c8ba8440faaf2bd3e8b7399171473" cid="PROP013" name="LastTimestamp" creation-date="06/29/2021 20:33:02" property-ref="924365a2945341eda1c9d067a45d0676" />
+                <attribute id="af8821d14018342779f1ebd488335c881473" cid="PROP014" name="id" creation-date="06/29/2021 20:33:02" property-ref="8fd616dc35fb47f1bef3c00af4d76a16" />
+                <attribute id="a78268145a6484c088fd60319b3d59604473" cid="PROP015" name="" creation-date="06/29/2021 20:33:02" property-ref="19475393470f4c638e7da58630884e9c" />
+                <attribute id="a87141e91332f480e836bfb1f7e1eed40473" cid="PROP016" name="name" creation-date="06/29/2021 20:33:02" property-ref="fa465e7d4c6d495ca5d8b8c993e55259" />
+                <attribute id="aa8ccb58413474d7bb06b0a4b654f7c21473" cid="PROP017" name="" creation-date="06/29/2021 20:33:02" property-ref="1bdeaaec27b0486c852ebbf21a698e96" />
+                <attribute id="a055d39f450d64bf396a5aa34d3516c3e473" cid="PROP018" name="jobtitle" creation-date="06/29/2021 20:33:02" property-ref="2e10164dbdbf43509f2bbaeda7e55751" />
+                <attribute id="a9a8b5ba2c6b847df975fd181c549adbf473" cid="PROP019" name="" creation-date="06/29/2021 20:33:02" property-ref="6bc725b28b174081b4ad29fa952b0f1d" />
+                <attribute id="ac7e08a2faee043879b7fbf508de171ad473" cid="PROP020" name="clockedin" creation-date="06/29/2021 20:33:02" property-ref="9a7698f1bb6b48bb9527c3e69948c9fb" />
+                <attribute id="ae44083419c9243b082cca57078428860473" cid="PROP021" name="" creation-date="06/29/2021 20:33:02" property-ref="a7365ac3f144420ba71940eb61cd3537" />
+                <attribute id="aae6127a6bb754bd7acf8521835bd5742473" cid="PROP022" name="lasttimestamp" creation-date="06/29/2021 20:33:02" property-ref="691b8c8d43b04e7aa61dc20bc50dcc8b" />
+                <attribute id="a2fce6a2d88de423e8f3e0211e0d032a9473" cid="PROP023" name="" creation-date="06/29/2021 20:33:02" property-ref="83aeb966d9ce4ca09dbf28810fbd4bd5" />
+                <attribute id="a0240f137975745948eeabde71420a668473" cid="PROP024" name="hoursworked" creation-date="06/29/2021 20:33:02" property-ref="8f8da0e270d94065ad2121905fcca0b4" />
+                <attribute id="a39e315d24395408a999d1b852072002c473" cid="PROP025" name="" creation-date="06/29/2021 20:33:02" property-ref="e30e1dc3cdf142d1abebe7ccc1808f04" />
+              </attributes>
+              <operations>
+                <operation id="o1f5adbe546724a84bfd494205a9c7df5473" cid="OP006" name="Employee" creation-date="06/29/2021 20:33:02" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="ped8fd23499e74708925a6296c1b0dc94" name="id" type="int" type-id="int" />
+                    <parameter id="p9e82e2e14b26496fab2eaab823ae0b71" name="name" type="string" type-id="string" />
+                    <parameter id="pfae72bad97c6415c8793424a47b6160b" name="jobTitle" type="string" type-id="string" />
+                    <parameter id="pda4297f8febe4c43b3dfb124f0cadd6a" name="hoursWorked" type="float" type-id="float" />
+                    <parameter id="p60c1129616c14fb6acb34618d06175f0" name="clockedIn" type="int" type-id="int" />
+                    <parameter id="pe473e084efbc4abdae9ea8283a27c821" name="lastTimestamp" type="DateTime" type-id="Uml.DateTime" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <documentation>
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles />
+                      <content>
+                        <paragraph>
+                          <style />
+                          <p>
+                            <t> &lt;summary&gt;
+ clocks employee in or out depending on the current status, month and time
+ &lt;/summary&gt;
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </documentation>
+                </operation>
+                <operation id="o44ad3d1d8d354a45b9807bdfbe0681f5473" cid="OP007" name="Clock" creation-date="06/29/2021 20:33:02" type="" type-id="" visibility="public">
+                  <documentation>
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles />
+                      <content>
+                        <paragraph>
+                          <style />
+                          <p>
+                            <t> &lt;summary&gt;
+ pulls salary information from Jobs.json and Ranks.json for Employee and calculates paycheck
+ according to current recorded stats
+ &lt;/summary&gt;
+ &lt;returns&gt;calculated paycheck up to 2 digits past the decimal point&lt;/returns&gt;
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </documentation>
+                  <source-codes>
+                    <source-code language="CSharp">
+            var time = DateTime.Now;
+            if (ClockedIn == 0)
+            {
+                if (LastTimestamp.Month == time.Month &amp;&amp; LastTimestamp.Year == time.Year)
+                {
+                    LastTimestamp = time;
+                    ClockedIn = 1;
+                }
+                else
+                {
+                    HoursWorked = 0;
+                    LastTimestamp = time;
+                    ClockedIn = 1;
+                }
+            }
+            else
+            {
+                if (LastTimestamp.Month == time.Month &amp;&amp; LastTimestamp.Year == time.Year)
+                {
+                    var delta = time - LastTimestamp;
+                    HoursWorked += Convert.ToSingle(delta.TotalHours);
+                    LastTimestamp = time;
+                    ClockedIn = 0;
+                }
+                else
+                {
+                    var beginningOfMonth = new DateTime(time.Year, time.Month, 1);
+                    var delta = time - beginningOfMonth;
+                    HoursWorked = Convert.ToSingle(delta.TotalHours);
+                    LastTimestamp = time;
+                    ClockedIn = 0;
+                }
+            }
+            Utils.UpdateEmployee(this);
+        </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5ab01b1eb873424a83f3123d5fd49409473" cid="OP008" name="CalculatePaycheck" creation-date="06/29/2021 20:33:02" type="float" type-id="float" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+            int priority = 0;
+            float hourlybonuspercent = 0;
+            float minimumhoursforglobal = -1;
+            float dangerbonuspercent = (float)Utils.Jobs[JobTitle][2];
+            float globalHours = 0;
+
+            foreach (string Rank in Utils.Jobs[JobTitle][1])
+            {
+                if (Utils.Ranks[Rank]["Priority"] &gt; priority)
+                {
+                    hourlybonuspercent = (float)(Utils.Ranks[Rank]["hourlyBonusPercent"]);
+                    if (Utils.Ranks[Rank].ContainsKey("minimumHoursForGlobal"))
+                    {
+                        minimumhoursforglobal = (float)(Utils.Ranks[Rank]["minimumHoursForGlobal"]);
+                        globalHours = (float)(Utils.Ranks[Rank]["globalHours"]);
+                    }
+                    priority = (int)Utils.Ranks[Rank]["Priority"];
+
+                }
+            }
+            float salaryWithBonus = (Utils.Salary * (100 + hourlybonuspercent) / 100);
+            float dangerMultiplier = (100 + dangerbonuspercent) / 100;
+            float payCheck;
+            if (minimumhoursforglobal != -1 &amp;&amp; HoursWorked &gt;= minimumhoursforglobal)
+            {
+                payCheck = salaryWithBonus * globalHours * dangerMultiplier;
+                payCheck = (float)(Math.Round(payCheck * 100) / 100);
+            }
+            else
+            {
+                payCheck = salaryWithBonus * HoursWorked * dangerMultiplier;
+                payCheck = (float)(Math.Round(payCheck * 100) / 100);
+            }
+
+            return payCheck;
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="3dd3673a9a1f4980a3717312b3064551" cid="PROP008" type="property" name="Id" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="f42d307e17864ac99923b87eeb5fa5ef" cid="PROP009" type="property" name="Name" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="50115060f4414d7a97f0302a56cacade" cid="PROP010" type="property" name="JobTitle" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="e109cbf10e1245ec8e177bc6802bd66c" cid="PROP011" type="property" name="HoursWorked" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature />
+              <structural-feature type="float" type-id="float" />
+              <property />
+            </item>
+            <item id="eb111447e7844db491fd0a3fcf96e6ae" cid="PROP012" type="property" name="ClockedIn" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="924365a2945341eda1c9d067a45d0676" cid="PROP013" type="property" name="LastTimestamp" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="private">
+              <feature />
+              <structural-feature type="DateTime" type-id="Uml.DateTime" />
+              <property />
+            </item>
+            <item id="8fd616dc35fb47f1bef3c00af4d76a16" cid="PROP014" type="property" name="id" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="8fd616dc35fb47f1bef3c00af4d76a16_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property>
+                <source-codes>
+                  <source-code language="CSharp" uid="scs-bd6c3d27-cf68-4447-8973-9308d461ee49">
+                    <script name="Get"> return Id; </script>
+                  </source-code>
+                </source-codes>
+              </property>
+            </item>
+            <item id="19475393470f4c638e7da58630884e9c" cid="PROP015" type="property" name="" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="19475393470f4c638e7da58630884e9c_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="fa465e7d4c6d495ca5d8b8c993e55259" cid="PROP016" type="property" name="name" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="fa465e7d4c6d495ca5d8b8c993e55259_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property>
+                <source-codes>
+                  <source-code language="CSharp" uid="scs-4136134f-5592-4c46-82ed-65dd41c2983b">
+                    <script name="Get"> return Name; </script>
+                  </source-code>
+                </source-codes>
+              </property>
+            </item>
+            <item id="1bdeaaec27b0486c852ebbf21a698e96" cid="PROP017" type="property" name="" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="1bdeaaec27b0486c852ebbf21a698e96_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="2e10164dbdbf43509f2bbaeda7e55751" cid="PROP018" type="property" name="jobtitle" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="2e10164dbdbf43509f2bbaeda7e55751_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property>
+                <source-codes>
+                  <source-code language="CSharp" uid="scs-ef52567a-0493-4e52-8b3d-01277ae76995">
+                    <script name="Get"> return JobTitle; </script>
+                  </source-code>
+                </source-codes>
+              </property>
+            </item>
+            <item id="6bc725b28b174081b4ad29fa952b0f1d" cid="PROP019" type="property" name="" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="6bc725b28b174081b4ad29fa952b0f1d_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="9a7698f1bb6b48bb9527c3e69948c9fb" cid="PROP020" type="property" name="clockedin" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="9a7698f1bb6b48bb9527c3e69948c9fb_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property>
+                <source-codes>
+                  <source-code language="CSharp" uid="scs-d4bc6fb4-629e-4eae-8014-cccb3b98a281">
+                    <script name="Get"> return ClockedIn; </script>
+                  </source-code>
+                </source-codes>
+              </property>
+            </item>
+            <item id="a7365ac3f144420ba71940eb61cd3537" cid="PROP021" type="property" name="" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="a7365ac3f144420ba71940eb61cd3537_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="691b8c8d43b04e7aa61dc20bc50dcc8b" cid="PROP022" type="property" name="lasttimestamp" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="691b8c8d43b04e7aa61dc20bc50dcc8b_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="DateTime" type-id="Uml.DateTime" />
+              <property>
+                <source-codes>
+                  <source-code language="CSharp" uid="scs-6b772136-3ac0-4da1-9c4a-8b809374c41d">
+                    <script name="Get"> return LastTimestamp; </script>
+                  </source-code>
+                </source-codes>
+              </property>
+            </item>
+            <item id="83aeb966d9ce4ca09dbf28810fbd4bd5" cid="PROP023" type="property" name="" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="83aeb966d9ce4ca09dbf28810fbd4bd5_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="8f8da0e270d94065ad2121905fcca0b4" cid="PROP024" type="property" name="hoursworked" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <documentation>
+                <text>
+                  <default>
+                    <style font-name="Verdana" font-size="12">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </default>
+                  <styles />
+                  <content>
+                    <paragraph>
+                      <style />
+                      <p>
+                        <t> &lt;summary&gt;
+ constructor
+ &lt;/summary&gt;
+ &lt;param name="id"&gt;employee id (DB primary key)&lt;/param&gt;
+ &lt;param name="name"&gt;employee name&lt;/param&gt;
+</t>
+                      </p>
+                    </paragraph>
+                  </content>
+                </text>
+              </documentation>
+              <stereotype-instances>
+                <stereotype id="8f8da0e270d94065ad2121905fcca0b4_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="float" type-id="float" />
+              <property>
+                <source-codes>
+                  <source-code language="CSharp" uid="scs-260c4575-20ca-4b77-bf84-38fa2049e7fd">
+                    <script name="Get"> return HoursWorked; </script>
+                  </source-code>
+                </source-codes>
+              </property>
+            </item>
+            <item id="e30e1dc3cdf142d1abebe7ccc1808f04" cid="PROP025" type="property" name="" style-class="" owner="5e40b968883f4292bc50788a93c51417" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <documentation>
+                <text>
+                  <default>
+                    <style font-name="Verdana" font-size="12">
+                      <text>
+                        <solid-brush color="#FF000000" />
+                      </text>
+                    </style>
+                  </default>
+                  <styles />
+                  <content>
+                    <paragraph>
+                      <style />
+                      <p>
+                        <t> &lt;param name="jobTitle"&gt; emplyee job title (through configuration defines ranks and salary bonuses)&lt;/param&gt;
+ &lt;param name="hoursWorked"&gt;employees' total hour worked this month so far&lt;/param&gt;
+ &lt;param name="clockedIn"&gt;boolean describing if the employee is on/off the clock - 0=off the clock, 1=on the clock&lt;/param&gt;
+ &lt;param name="lastTimestamp"&gt;time of last change in employee status&lt;/param&gt;
+</t>
+                      </p>
+                    </paragraph>
+                  </content>
+                </text>
+              </documentation>
+              <stereotype-instances>
+                <stereotype id="e30e1dc3cdf142d1abebe7ccc1808f04_property_c" type="property" ref="" />
+              </stereotype-instances>
+              <feature />
+              <structural-feature type="" type-id="" />
+              <property />
+            </item>
+            <item id="89cbff6cb82844528e7c9374c7249829" cid="C004" type="class" name="Program" style-class="" creator="" creation-date="06/29/2021 20:33:02" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv920c8bffd6ce4da697e1a79ac2d963a9" name="namespace" type="text" multiple="false" value="Mamas" />
+              </tagged-values>
+              <operations>
+                <operation id="oc740a7122d23471b93076c1567814311473" cid="OP009" name="Main" creation-date="06/29/2021 20:33:02" type="" type-id="" visibility="undefined" static="true">
+                  <parameters>
+                    <parameter id="p6899e490007e43e4945744fe0c712397" name="args" type="string[]" type-id="string[]" />
+                  </parameters>
+                  <documentation>
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles />
+                      <content>
+                        <paragraph>
+                          <style />
+                          <p>
+                            <t> &lt;summary&gt;
+ My main function calls utils.load() to load all configuration and
+ employee data, then calls Menu.MainMenu() to enter a while loop that 
+ functions as the menu for the application.
+ &lt;/summary&gt;
+ &lt;param name="args"&gt;&lt;/param&gt;
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </documentation>
+                  <source-codes>
+                    <source-code language="CSharp">
+            try
+            {
+                Utils.Load();
+                string option;
+                Menu.MainMenu();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("Press any key to terminate...");
+                Console.ReadKey();
+            }
+            
+        </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="p794f75c2d0f8448f96070c2b1e643b7f_375339201" name="Mamas" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="Mamas">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author>Itay Sade</author>
+              </authors>
+              <description />
+              <creation-date>06/29/2021 20:33:02</creation-date>
+              <change-date>06/29/2021 20:49:29</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items>
+              <item id="410850b608f540bdb7d69a9c0a3401dd" cid="ELEM001" type="usage" name="initialization(calls load functions)" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:36:24" from="89cbff6cb82844528e7c9374c7249829" to="e948907baad54d2ba26a49274368186a" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="410850b608f540bdb7d69a9c0a3401dd_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="d29749c5d41d4e8384e168ff09a4ca14" cid="ELEM002" type="usage" name="starts main menu loop" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:37:14" from="89cbff6cb82844528e7c9374c7249829" to="48dea7ea55da4b958a03775130bc646d" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="d29749c5d41d4e8384e168ff09a4ca14_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="ac5623d472bd42b2a35ea4bd03bb3ca0" cid="ELEM003" type="usage" name="uses static employees list" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:37:49" from="48dea7ea55da4b958a03775130bc646d" to="e948907baad54d2ba26a49274368186a" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="ac5623d472bd42b2a35ea4bd03bb3ca0_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="3e5eb236de9b42398cff5b6788472aa8" cid="ELEM004" type="usage" name="creates employees and saves to list in initialization" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:38:37" from="e948907baad54d2ba26a49274368186a" to="5e40b968883f4292bc50788a93c51417" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="3e5eb236de9b42398cff5b6788472aa8_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="9bef6187d3c642dea576a809b906069a" cid="ELEM007" type="usage" name="calculates paycheck using config information in static dictionaries ranks and jobs" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:40:00" from="5e40b968883f4292bc50788a93c51417" to="e948907baad54d2ba26a49274368186a" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="9bef6187d3c642dea576a809b906069a_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="d09fb83b40144b7f94f2b84a7dd1631f" cid="ELEM008" type="usage" name="gets employee properties and calls employee functions to show user" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:40:57" from="48dea7ea55da4b958a03775130bc646d" to="5e40b968883f4292bc50788a93c51417" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="d09fb83b40144b7f94f2b84a7dd1631f_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="572ac8201811498bb23497b92b21a871" cid="C005" type="class" name="[dbo].[Employees]" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:45:28">
+                <stereotypes>
+                  <stereotype name="table" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="572ac8201811498bb23497b92b21a871_table_c" type="table" ref="" />
+                </stereotype-instances>
+                <owned-items>
+                  <owned-item ref="45ca86f48afa43b884340b825e8c4a3e" />
+                  <owned-item ref="63183b4694d747d6bb4737937c16f0ca" />
+                  <owned-item ref="8cb913e28b94428182231696699716c4" />
+                  <owned-item ref="d5a3313328b944479e044e06b0943dc9" />
+                  <owned-item ref="f007498892754dcf95a57c9b6420dcb1" />
+                  <owned-item ref="8a19ee0fb88342aa81d2af5e4f834bee" />
+                </owned-items>
+                <attributes>
+                  <attribute id="acfc11e92755f44a7b5d000f7040cfe06623" cid="PROP026" name="Id" creation-date="06/29/2021 20:46:18" property-ref="45ca86f48afa43b884340b825e8c4a3e" />
+                  <attribute id="a8066d2d0c2694097aeb9452ecd315a66360" cid="PROP027" name="Name" creation-date="06/29/2021 20:46:52" property-ref="63183b4694d747d6bb4737937c16f0ca" />
+                  <attribute id="a963490d280224d139dd708af1833d7d4944" cid="PROP028" name="JobTitle" creation-date="06/29/2021 20:47:50" property-ref="8cb913e28b94428182231696699716c4" />
+                  <attribute id="a266851c8adf34da49d92d8bf1049b109963" cid="PROP029" name="HoursWorked" creation-date="06/29/2021 20:48:08" property-ref="d5a3313328b944479e044e06b0943dc9" />
+                  <attribute id="aa07477fbade8408595ab4c9e3fe4de28598" cid="PROP030" name="ClockedIn" creation-date="06/29/2021 20:48:32" property-ref="f007498892754dcf95a57c9b6420dcb1" />
+                  <attribute id="a3659c28b7e3a4dee957a8990b10d09f9776" cid="PROP031" name="LastTimestamp" creation-date="06/29/2021 20:48:46" property-ref="8a19ee0fb88342aa81d2af5e4f834bee" />
+                </attributes>
+              </item>
+              <item id="45ca86f48afa43b884340b825e8c4a3e" cid="PROP026" type="property" name="Id" style-class="" owner="572ac8201811498bb23497b92b21a871" creator="" creation-date="06/29/2021 20:46:18" visibility="private">
+                <feature />
+                <structural-feature type="int (unique key)" type-id="int (unique key)" />
+                <property />
+              </item>
+              <item id="63183b4694d747d6bb4737937c16f0ca" cid="PROP027" type="property" name="Name" style-class="" owner="572ac8201811498bb23497b92b21a871" creator="" creation-date="06/29/2021 20:46:52" visibility="private">
+                <feature />
+                <structural-feature type="varchar50" type-id="varchar50" />
+                <property />
+              </item>
+              <item id="8cb913e28b94428182231696699716c4" cid="PROP028" type="property" name="JobTitle" style-class="" owner="572ac8201811498bb23497b92b21a871" creator="" creation-date="06/29/2021 20:47:50" visibility="private">
+                <feature />
+                <structural-feature type="varchar50" type-id="varchar50" />
+                <property />
+              </item>
+              <item id="d5a3313328b944479e044e06b0943dc9" cid="PROP029" type="property" name="HoursWorked" style-class="" owner="572ac8201811498bb23497b92b21a871" creator="" creation-date="06/29/2021 20:48:08" visibility="private">
+                <feature />
+                <structural-feature type="float" type-id="float" />
+                <property />
+              </item>
+              <item id="f007498892754dcf95a57c9b6420dcb1" cid="PROP030" type="property" name="ClockedIn" style-class="" owner="572ac8201811498bb23497b92b21a871" creator="" creation-date="06/29/2021 20:48:32" visibility="private">
+                <feature />
+                <structural-feature type="bit" type-id="bit" />
+                <property />
+              </item>
+              <item id="8a19ee0fb88342aa81d2af5e4f834bee" cid="PROP031" type="property" name="LastTimestamp" style-class="" owner="572ac8201811498bb23497b92b21a871" creator="" creation-date="06/29/2021 20:48:46" visibility="private">
+                <feature />
+                <structural-feature type="DateTime" type-id="Uml.DateTime" />
+                <property />
+              </item>
+              <item id="65449309492b4c29a4242d7539d5046d" cid="ELEM009" type="usage" name="loads employees from DB to static list" style-class="" change-tracking-state="added" creator="" creation-date="06/29/2021 20:49:27" from="e948907baad54d2ba26a49274368186a" to="572ac8201811498bb23497b92b21a871" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="65449309492b4c29a4242d7539d5046d_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+            </abstract-items>
+            <layer id="8b5597d764d4448fb5b9558def91d095" name="Default" visible="true" enabled="true" locked="false">
+              <item id="48dea7ea55da4b958a03775130bc646d" iid="1d979a5b1c6e4b1a92a6ae6d67d7eb49" creation-date="06/29/2021 20:33:02" order-index="0" type="entity">
+                <layout ax="382.5" ay="447" awidth="350" aheight="177" x="382.5" y="447" width="350" height="177" rotation-center="-89,0" />
+                <class />
+              </item>
+              <item id="e948907baad54d2ba26a49274368186a" iid="dad8da5d70c94640a78c8129360ed2fc" creation-date="06/29/2021 20:33:02" order-index="1" type="entity">
+                <layout ax="382.5" ay="144" awidth="350" aheight="193" x="382.5" y="144" width="350" height="193" />
+                <class />
+              </item>
+              <item id="5e40b968883f4292bc50788a93c51417" iid="3defe3adda4c470ebfd2988ba9b39ce3" creation-date="06/29/2021 20:33:02" order-index="2" type="entity">
+                <layout ax="1002" ay="128" awidth="356" aheight="480" x="1002" y="128" width="356" height="480" />
+                <class />
+              </item>
+              <item id="89cbff6cb82844528e7c9374c7249829" iid="b364e792b6bc49ca92079ddfec529ca7" creation-date="06/29/2021 20:33:02" order-index="3" type="entity">
+                <layout ax="135.5" ay="356" awidth="127" aheight="56" x="135.5" y="356" width="127" height="56" />
+                <class />
+              </item>
+              <item id="410850b608f540bdb7d69a9c0a3401dd" iid="41fbdc214d3b4d838504a5dd558b4a5b" creation-date="06/29/2021 20:36:24" order-index="4" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="262" y1="359" x2="382" y2="311" start-border-pos="0.262186595371791" end-border-pos="0.784201943194928" name-position="0,20">
+                  <points>
+                    <point x="262" y="359" />
+                    <point x="382" y="311" />
+                  </points>
+                </layout>
+                <relation from="89cbff6cb82844528e7c9374c7249829" from-iid="b364e792b6bc49ca92079ddfec529ca7" to="e948907baad54d2ba26a49274368186a" to-iid="dad8da5d70c94640a78c8129360ed2fc" />
+              </item>
+              <item id="d29749c5d41d4e8384e168ff09a4ca14" iid="b830ed8c26bf4ad0a04f70902c2a4ee3" creation-date="06/29/2021 20:37:14" order-index="5" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="262" y1="411" x2="382" y2="461" start-border-pos="0.494080815996442" end-border-pos="0.979545334638175" name-position="0,20">
+                  <points>
+                    <point x="262" y="411" />
+                    <point x="382" y="461" />
+                  </points>
+                </layout>
+                <relation from="89cbff6cb82844528e7c9374c7249829" from-iid="b364e792b6bc49ca92079ddfec529ca7" to="48dea7ea55da4b958a03775130bc646d" to-iid="1d979a5b1c6e4b1a92a6ae6d67d7eb49" />
+              </item>
+              <item id="ac5623d472bd42b2a35ea4bd03bb3ca0" iid="2e211c9ad2364665b080c34e2bf82e32" creation-date="06/29/2021 20:37:49" order-index="6" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="558" y1="447" x2="558" y2="337" start-border-pos="0.125357142857143" end-border-pos="0.624642857142857" name-position="0,20">
+                  <points>
+                    <point x="558" y="447" />
+                    <point x="558" y="337" />
+                  </points>
+                </layout>
+                <relation from="48dea7ea55da4b958a03775130bc646d" from-iid="1d979a5b1c6e4b1a92a6ae6d67d7eb49" to="e948907baad54d2ba26a49274368186a" to-iid="dad8da5d70c94640a78c8129360ed2fc" />
+              </item>
+              <item id="3e5eb236de9b42398cff5b6788472aa8" iid="a75f4da0c72c40f4a4e682a47610515c" creation-date="06/29/2021 20:38:37" order-index="7" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="732" y1="276" x2="1002" y2="331" start-border-pos="0.420734543874474" end-border-pos="0.894078238805135" name-position="0,20">
+                  <points>
+                    <point x="732" y="276" />
+                    <point x="1002" y="331" />
+                  </points>
+                </layout>
+                <relation from="e948907baad54d2ba26a49274368186a" from-iid="dad8da5d70c94640a78c8129360ed2fc" to="5e40b968883f4292bc50788a93c51417" to-iid="3defe3adda4c470ebfd2988ba9b39ce3" />
+              </item>
+              <item id="9bef6187d3c642dea576a809b906069a" iid="10db05786ffe4c44bbf0673d40d09d60" creation-date="06/29/2021 20:40:00" order-index="8" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="1002" y1="250" x2="732" y2="240" start-border-pos="0.936485322316488" end-border-pos="0.374352331606218" name-position="-1,-32">
+                  <points>
+                    <point x="1002" y="250" />
+                    <point x="987" y="240.5" />
+                    <point x="732" y="240" />
+                  </points>
+                </layout>
+                <relation from="5e40b968883f4292bc50788a93c51417" from-iid="3defe3adda4c470ebfd2988ba9b39ce3" to="e948907baad54d2ba26a49274368186a" to-iid="dad8da5d70c94640a78c8129360ed2fc" />
+              </item>
+              <item id="d09fb83b40144b7f94f2b84a7dd1631f" iid="dff98013fe124165935d8cb793ac8706" creation-date="06/29/2021 20:40:57" order-index="9" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="732" y1="489" x2="1002" y2="416" start-border-pos="0.309326559810315" end-border-pos="0.849959802627563" name-position="0,20">
+                  <points>
+                    <point x="732" y="489" />
+                    <point x="1002" y="416" />
+                  </points>
+                </layout>
+                <relation from="48dea7ea55da4b958a03775130bc646d" from-iid="1d979a5b1c6e4b1a92a6ae6d67d7eb49" to="5e40b968883f4292bc50788a93c51417" to-iid="3defe3adda4c470ebfd2988ba9b39ce3" />
+              </item>
+              <item id="572ac8201811498bb23497b92b21a871" iid="4e392e14e63245bfb84c1416d8fc51e6" creation-date="06/29/2021 20:45:28" order-index="10" type="entity">
+                <layout ax="381.5" ay="-201" awidth="351" aheight="177" x="381.5" y="-201" width="351" height="177" rotation-center="15.5,-1" />
+                <class />
+              </item>
+              <item id="65449309492b4c29a4242d7539d5046d" iid="d9ed3872cf1741de824028dcc3a1ba77" creation-date="06/29/2021 20:49:27" order-index="11" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="558" y1="144" x2="557" y2="-24" start-border-pos="0.125162353515625" end-border-pos="0.624821937321937" name-position="0,20">
+                  <points>
+                    <point x="558" y="144" />
+                    <point x="557" y="-24" />
+                  </points>
+                </layout>
+                <relation from="e948907baad54d2ba26a49274368186a" from-iid="dad8da5d70c94640a78c8129360ed2fc" to="572ac8201811498bb23497b92b21a871" to-iid="4e392e14e63245bfb84c1416d8fc51e6" />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="p9baea9979b3b4e99aa928c615dfe1424_377288858" name="Packages" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author>Itay Sade</author>
+          </authors>
+          <description />
+          <creation-date>06/29/2021 20:33:02</creation-date>
+          <change-date>06/29/2021 20:33:02</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="82c8f413f4a949609df6f77aef13d4a6" name="Default" visible="true" enabled="true" locked="false">
+          <item id="41167067385343fa8a54d0f9e660b055" iid="27e3a0b0bab249eb9a24aceb10ecbb6d" creation-date="06/29/2021 20:33:02" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="87" aheight="56" x="0" y="0" width="87" height="56" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
