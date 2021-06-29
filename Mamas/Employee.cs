@@ -67,6 +67,7 @@ namespace Mamas
 
         /// <summary>
         /// clocks employee in or out depending on the current status, month and time
+        /// ***resets hours worked if month has changed from last timestamp, to start a new month calculation.
         /// </summary>
         public void Clock()
         {
