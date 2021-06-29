@@ -1,0 +1,113 @@
+{
+  "Cleaner": [
+    "Administraion",
+    [ "Junior" ],
+    0
+  ],
+  "ChemCleaner": [
+    "Administraion",
+    [ "Junior", "ShotCaller", "Expert" ],
+    20
+  ],
+  "HeadCleaner": [
+    "Administraion",
+    [ "Major" ],
+    0
+  ],
+  "CleanerShiftManager": [
+    "Administraion",
+    [ "ShotCaller" ],
+    0
+  ],
+  "Cook": [
+    "Administraion",
+    [ "Major" ],
+    0
+  ],
+  "SousChef": [
+    "Administraion",
+    [ "Major", "Expert" ],
+    0
+  ],
+  "Chef": [
+    "Administraion",
+    [ "ShotCaller", "Major", "Expert" ],
+    0
+  ],
+  "FoodDistributor": [
+    "Administraion",
+    [ "Junior" ],
+    0
+  ],
+  "HeadOfAdministraion": [
+    "Administraion",
+    [ "Manager", "ShotCaller" ],
+    0
+  ],
+  "Medic": [
+    "Professional",
+    [ "Junior" ],
+    0
+  ],
+  "Paramedic": [
+    "Professional",
+    [ "Junior" ],
+    0
+  ],
+  "Nurse": [
+    "Professional",
+    [ "Junior" ],
+    0
+  ],
+  "HeadNurse": [
+    "Professional",
+    [ "Major", "ShotCaller" ],
+    0
+  ],
+  "Midwife": [
+    "Professional",
+    [ "Junior", "Major" ],
+    0
+  ],
+  "BreechBirthMidwife": [
+    "Professional",
+    [ "Junior", "Major", "Expert" ],
+    0
+  ],
+  "TraineeDoctor": [
+    "Proffesional",
+    [ "Junior" ],
+    0
+  ],
+  "BreechTraineeDoctor": [
+    "Professional",
+    [ "Junior", "Expert" ],
+    0
+  ],
+  "Doctor": [
+    "Professional",
+    [ "Major" ],
+    0
+  ],
+  "MajorDoctor": [
+    "Professional",
+    [ "Major", "ShotCaller" ],
+    0
+  ],
+  "ExpertDoctor": [
+    "Professional",
+    [ "Major", "Expert" ],
+    0
+  ],
+  "DeputyHeadOfDepartment": [
+    "Professional",
+    [ "Manager", "ShotCaller" ],
+    0
+  ],
+  "HeadOfDepartment": [
+    "Professional",
+    [ "Manager", "ShotCaller" ],
+    100
+  ]
+
+}

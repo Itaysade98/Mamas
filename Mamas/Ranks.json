@@ -1,0 +1,26 @@
+{
+  "Junior": {
+    "Priority": 1,
+    "hourlyBonusPercent": 0
+  },
+  "Major": {
+    "Priority": 2,
+    "hourlyBonusPercent": 5
+  },
+  "Expert": {
+    "Priority": 3,
+    "hourlyBonusPercent": 30
+  },
+  "ShotCaller": {
+    "Priority": 4,
+    "hourlyBonusPercent": 50,
+    "minimumHoursForGlobal": 50,
+    "globalHours":  200
+  },
+  "Manager": {
+    "Priority": 5,
+    "hourlyBonusPercent": 50,
+    "minimumHoursForGlobal": 0,
+    "globalHours": 200
+  }
+}
