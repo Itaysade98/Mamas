@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Mamas
 {
+    /// <summary>
+    /// Employee class, holds all relevant information need about an employee at Ichilov
+    /// </summary>
     public class Employee
     {
         private int Id;
@@ -43,7 +46,15 @@ namespace Mamas
             get { return HoursWorked; }
         }
 
-
+        /// <summary>
+        /// constructor
+        /// </summary>
+        /// <param name="id">employee id (DB primary key)</param>
+        /// <param name="name">employee name</param>
+        /// <param name="jobTitle"> emplyee job title (through configuration defines ranks and salary bonuses)</param>
+        /// <param name="hoursWorked">employees' total hour worked this month so far</param>
+        /// <param name="clockedIn">boolean describing if the employee is on/off the clock - 0=off the clock, 1=on the clock</param>
+        /// <param name="lastTimestamp">time of last change in employee status</param>
         public Employee(int id, string name, string jobTitle, float hoursWorked, int clockedIn, DateTime lastTimestamp)
         {
             this.Id = id;
@@ -54,6 +65,9 @@ namespace Mamas
             this.LastTimestamp = lastTimestamp;
         }
 
+        /// <summary>
+        /// clocks employee in or out depending on the current status, month and time
+        /// </summary>
         public void Clock()
         {
             var time = DateTime.Now;
@@ -92,6 +106,11 @@ namespace Mamas
             Utils.UpdateEmployee(this);
         }
 
+        /// <summary>
+        /// pulls salary information from Jobs.json and Ranks.json for Employee and calculates paycheck
+        /// according to current recorded stats
+        /// </summary>
+        /// <returns>calculated paycheck up to 2 digits past the decimal point</returns>
         public float CalculatePaycheck()
         {
             int priority = 0;

@@ -1,3 +1,13 @@
+/*
+  Contains mapping of jobs to department, list of ranks associated with it and danger bonus percent.
+  jobs must be entered in the following format:
+  "Job": [
+  [Required]
+    string department- "Administration" or "Professional",
+    [*list of ranks here*]- Ranks from Ranks.json,
+    float dangerpercent- danger bonus percent
+  ]
+*/
 {
   "Cleaner": [
     "Administraion",

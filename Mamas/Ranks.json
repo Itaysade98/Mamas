@@ -1,3 +1,21 @@
+/*
+  contains salary bonuses for every rank (except for danger bonuses that are job specific,
+  they are saved in Jobs.json).
+  ranks must be entered in the following format:
+  "Rank": {
+  [Required]
+    "Priority": (int) priority of rank- highest priority will be taken in to considration when calculating employee paycheck,
+    "hourlyBonusPercent": (float) bonus percent to be added to hourly salary when calculating paycheck,
+  [Optional]
+    "minimumHoursForGlobal": (float) minimum number of hours for global paycheck with "globalHours" amount of hours,
+    "globalHours": (float) number of hours to be calculated for global paycheck for employee,
+  }
+
+  the way i understood the problem, i decided the right way to approach the 
+  paycheck calculation was that the highest priority rank will be taken into consideration.
+  if this is not the way intended this can be fixed in the calculation function under the
+  Employee class easily.
+*/
 {
   "Junior": {
     "Priority": 1,
@@ -15,7 +33,7 @@
     "Priority": 4,
     "hourlyBonusPercent": 50,
     "minimumHoursForGlobal": 50,
-    "globalHours":  200
+    "globalHours": 200
   },
   "Manager": {
     "Priority": 5,

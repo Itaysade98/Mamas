@@ -10,6 +10,9 @@ using System.Configuration;
 
 namespace Mamas
 {
+    /// <summary>
+    /// class for static variables and functions used through-out the project.
+    /// </summary>
    public static class Utils
     {
         public static List<Employee> Employees = new List<Employee>();
@@ -22,6 +25,11 @@ namespace Mamas
         private static string RanksJsonPath = @"..\..\Ranks.json";
         private static string JobsJsonPath = @"..\..\Jobs.json";
 
+        /// <summary>
+        /// Loads variables from app.config, if it encounters an exception 
+        /// it uses the default parameters hard-coded above and writes to console
+        /// that there was an error
+        /// </summary>
         private static void LoadVars()
         {
             AppSettingsReader r = new AppSettingsReader();
@@ -61,24 +69,66 @@ namespace Mamas
                 Console.WriteLine("Couldn't read Jobs.Json Path from config file: " + e.Message);
             }
         }
+
+        /// <summary>
+        /// Loads Ranks.json into a static Dictionary.
+        /// in case of an error, writes to console and re-throws excpetion.
+        /// </summary>
         private static void LoadRanks()
         {
-            using (StreamReader r = new StreamReader(RanksJsonPath))
+            try
             {
-                string json = r.ReadToEnd();
-                Ranks = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, int>>>(json);
+                using (StreamReader r = new StreamReader(RanksJsonPath))
+                {
+                    string json = r.ReadToEnd();
+                    Ranks = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, int>>>(json);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Failed while trying to read Ranks.json, got the following error: {e.Message}");
+                throw;
             }
         }
 
+        /// <summary>
+        /// Loads Jobs.json into a static Dictionary.
+        /// in case of an error or if one of the ranks doesn't exist - throws an excpetion.
+        /// </summary>
         private static void LoadJobs()
         {
-            using (StreamReader r = new StreamReader(JobsJsonPath))
+            try
             {
-                string json = r.ReadToEnd();
-                Jobs = JsonConvert.DeserializeObject<Dictionary<string, List<dynamic>>>(json);
+                using (StreamReader r = new StreamReader(JobsJsonPath))
+                {
+                    string json = r.ReadToEnd();
+                    Jobs = JsonConvert.DeserializeObject<Dictionary<string, List<dynamic>>>(json);
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Failed while trying to read Jobs.json, got the following error: {e.Message}");
+                throw;
+            }
+
+            foreach ( List<dynamic> job in Jobs.Values)
+            {
+                foreach (string rank in job[1])
+                {
+                    if (!Ranks.ContainsKey(rank))
+                    {
+                        throw new ApplicationException($"rank: {rank} appears in Jobs.json but is not configured!");
+                    }
+                }
+            }
+            
         }
 
+        /// <summary>
+        /// Loads all Employees from DB file to static list of employees.
+        /// if an employee has a jobtitle that is not configured in Jobs.json he/she will not
+        /// be entered into the list.
+        /// </summary>
         private static void LoadEmployees()
         {
             con = new SqlConnection(String.Format(cs, ProjectDir));
@@ -96,13 +146,25 @@ namespace Mamas
                 float hoursworked = float.Parse(dataReader.GetFieldValue<double>(3).ToString());
                 int clockedin = Convert.ToInt32(dataReader.GetValue(4));
                 DateTime lasttimestamp = dataReader.GetFieldValue<DateTime>(5);
-                Employees.Add(new Employee(id, name, jobtitle, hoursworked, clockedin, lasttimestamp));
+                if (!Jobs.ContainsKey(jobtitle))
+                {
+                    Console.WriteLine($"Employee ID: {id} was not added to list because job: {jobtitle} does not exist in configuration.");
+                    continue;
+                }
+                else
+                {
+                    Employees.Add(new Employee(id, name, jobtitle, hoursworked, clockedin, lasttimestamp));
+                }
             }
             dataReader.Close();
             command.Dispose();
             con.Close();
         }
 
+        /// <summary>
+        /// sychronizes DB with updates made to given employee.
+        /// </summary>
+        /// <param name="employee">Employee object to update in DB</param>
         public static void UpdateEmployee(Employee employee)
         {
             string sql = $"update [dbo].[Employees] set HoursWorked={ employee.hoursworked}, ClockedIn={employee.clockedin}, LastTimestamp='{ employee.lasttimestamp.ToString()}' where Id={ employee.id}";
@@ -113,11 +175,14 @@ namespace Mamas
             con.Close();
         }
 
+        /// <summary>
+        /// calls all other static load functions in the right order.
+        /// </summary>
         public static void Load()
         {
             LoadVars();
-            LoadJobs();
             LoadRanks();
+            LoadJobs();
             LoadEmployees();
         }
     }
